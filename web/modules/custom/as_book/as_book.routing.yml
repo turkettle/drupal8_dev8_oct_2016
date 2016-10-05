@@ -1,17 +1,8 @@
 
-as_book.default_controller_listing:
-  path: '/book/listing'
+as_book.default_controller_bookListing:
+  path: 'books'
   defaults:
-    _controller: '\Drupal\as_book\Controller\DefaultController::listing'
-    _title: 'Book Listing'
+    _controller: '\Drupal\as_book\Controller\DefaultController::bookListing'
+    _title: 'Book listing'
   requirements:
     _permission: 'access content'
-
-as_book.reservation_form:
-  path: '/as_book/form/reservation'
-  defaults:
-    _form: '\Drupal\as_book\Form\ReservationForm'
-    _title: 'ReservationForm'
-  requirements:
-    _access: 'TRUE'
-  

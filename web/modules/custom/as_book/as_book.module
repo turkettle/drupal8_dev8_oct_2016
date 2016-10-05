@@ -16,22 +16,33 @@ function as_book_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.as_book':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Provides a Book application for the website.') . '</p>';
+      $output .= '<p>' . t('Provides a Book reservation application for the website.') . '</p>';
       return $output;
 
     default:
   }
 }
 
-
 /**
-  * Implements hook_theme().
-*/
+ * Implements hook_theme().
+ */
 function as_book_theme($existing, $type, $theme, $path) {
 
   return [
-    'book_list' => [
+    'book_listing' => [
       'render element' => 'elements',
     ],
   ];
+
+
+
+
+
+
+
+
+
+
+
+  
 }
