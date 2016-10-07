@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9fee261738da64e3b2e63784c7194751",
-    "content-hash": "06729d60e93d66a5cec6196bd5f256d9",
+    "hash": "14f256de37e4874e1f33c44f24308a1b",
+    "content-hash": "6d7812c09da4841bc6bb5bbceee9fe35",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1138,6 +1138,45 @@
             "time": "2016-08-03 05:45:18"
         },
         {
+            "name": "drupal/config_update",
+            "version": "8.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/config_update.git",
+                "reference": "ac1526df5836a611f04bb421945beddb6306b7f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.1.zip",
+                "reference": "ac1526df5836a611f04bb421945beddb6306b7f2",
+                "shasum": null
+            },
+            "require": {
+                "drupal/config": "8.*",
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/config_update_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/config": "Required by drupal/config_update_ui",
+                "drupal/core": "Required by drupal/config_update_ui"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides basic revert and update functionality for other modules",
+            "homepage": "https://www.drupal.org/project/config_update",
+            "time": "2016-03-01 16:28:35"
+        },
+        {
             "name": "drupal/console",
             "version": "1.0.0-rc5",
             "source": {
@@ -1576,6 +1615,45 @@
             "time": "2016-06-23 14:14:07"
         },
         {
+            "name": "drupal/features",
+            "version": "8.3.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/features",
+                "reference": "77534a3a8a7563315a4e6da250066e34be736a7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-rc1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/config": "8.*",
+                "drupal/config_update": "8.*",
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/features_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/features_ui"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-3.x": "8.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Enables administrators to package configuration into modules.",
+            "homepage": "https://www.drupal.org/project/features",
+            "time": "2016-09-29 20:18:34"
+        },
+        {
             "name": "drupal/search_kint",
             "version": "8.1.0",
             "source": {
@@ -1617,7 +1695,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/simple_gmap-8.x-1.0.zip",
-                "reference": null,
+                "reference": "55ff3e75bfc2d91225aa56d8a9b9ff9fc47eaa72",
                 "shasum": null
             },
             "require": {
